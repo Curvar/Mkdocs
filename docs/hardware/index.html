@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Hardware - Equipos informáticos</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Equipos informáticos</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Inicio</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../introduccion/" class="nav-link">Introducción</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contenido <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Hardware</a>
+</li>
+                                    
+<li>
+    <a href="../software/" class="dropdown-item">Software</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../introduccion/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../software/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#componentes-internos" class="nav-link">Componentes internos</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#placa-base" class="nav-link">Placa base</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#microprocesador" class="nav-link">Microprocesador</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#memoria-ram" class="nav-link">Memoria RAM</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dispositivos-de-almacenamiento" class="nav-link">Dispositivos de almacenamiento</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#componentes-externos" class="nav-link">Componentes externos</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#perifericos-de-entrada" class="nav-link">Periféricos de entrada</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#perifericos-de-salida" class="nav-link">Periféricos de salida</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#perifericos-de-entrada-y-salida" class="nav-link">Periféricos de entrada y salida</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#otras-clasificaciones" class="nav-link">Otras clasificaciones</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ejemplos" class="nav-link">Ejemplos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#conectores-y-puertos" class="nav-link">Conectores y puertos</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#conectores-internos" class="nav-link">Conectores internos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#puertos" class="nav-link">Puertos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="componentes-internos">Componentes internos</h1>
+<hr />
+<p><a href="../descarga_hardware_software_comprimido.pdf"><img alt="Botón descarga" src="../img/donwload.png" /></a></p>
+<p>Los componentes internos son aquellos que se encuentran dentro de la carcasa o caja del ordenador. Según el tipo de ordenador que consideremos unos componentes serán internos o externos. Por ejemplo: en un equipo de sobremesa el teclado será un elemento externo, mientras que en un portátil serán interno, aunque también tendríamos la posibilidad de añadir uno externo.</p>
+<p>A lo largo de este documento tendremos como referencia un ordenador de sobremesa, salvo que se indique lo contrario en algún apartado específico.</p>
+<h2 id="placa-base">Placa base</h2>
+<p>Es una tarjeta electrónica, una placa de circuito impreso, a la que se conectan los distintos componentes tanto internos como externos que componen el ordenador. 
+<img alt="Placa base" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/A790GXH-128M-Motherboard.jpg" /></p>
+<blockquote>
+<p><a href="https://creativecommons.org/licenses/by-sa/3.0">Evan-Amos, CC BY-SA 3.0</a> via Wikimedia Commons</p>
+</blockquote>
+<h2 id="microprocesador">Microprocesador</h2>
+<p>El microprocesador es el cerebro del ordenador</p>
+<h3 id="frecuencia-del-microprocesador">Frecuencia del microprocesador</h3>
+<p>La frecuencia de trabajo de un microprocesador se mide en Hz, esto es, operaciones que realiza por segundo. Como un microprocesador realiza miles de millones de operaciones por segundo es necesario utilizar otras unidades como <em>kHz</em>, <em>MHz</em>, <em>GHz</em>. ¿Cuál es la relación entre ellas? </p>
+<p><em>1kHz=1000Hz</em></p>
+<p><em>1MHz= 1000kHz=1000000Hz</em></p>
+<p><em>1GHz=1000MHz=1000000kHz=1000000000Hz</em></p>
+<div class="admonition note">
+<p class="admonition-title">Observación</p>
+<p>Si tienes dudas en el cambio de unidades, piensa en gramos y kilogramos o en metros y kilómetros. Seguro que así lo verás más claro.</p>
+</div>
+<p>¿Cuántas operaciones por segundo es capaz de realizar un microprocesador cuya frecuencia es 3,2GHz?</p>
+<p>Para contestar a la pregunta hemos de realizar la siguiente operación</p>
+<p><strong><em>3,2GHzx1000= 3200MHzx1000=3200000kHzx1000=3200000000 Hz =3,2x10^9Hz</em></strong>.</p>
+<p>Pero no todo es la frecuencia en un microprocesador, tenemos que tener en cuenta:</p>
+<ul>
+<li>Número de núcleos del procesador (Dual Core, Quad Core, Octa Core).</li>
+<li>Número de hilos (threads) del procesador.</li>
+<li>Longitud de palabra (32 bist, 64 bits).</li>
+</ul>
+<h2 id="memoria-ram">Memoria RAM</h2>
+<p>La memoria RAM es una memoria a corto plazo, volátil (se pierde la información al desconectar la alimentación), de lectura y escritura (se puede escribir datos en ella y se pueden leer). RAM son las iniciales de <em>Random Access Memory</em>. Esto quiere decir que es posible acceder a cualquier posición de la memoria y que siempre va a tardar lo mismo en acceder a cualquier posición de la misma.</p>
+<h2 id="dispositivos-de-almacenamiento">Dispositivos de almacenamiento</h2>
+<p>Pueden utilizar diferentes tecnologías como:</p>
+<ul>
+<li>Tecnología magnética: discos duros mecánicos (HDD)</li>
+<li>Tecnología óptica: CD, DVD</li>
+<li>Tecnología de estado sólido: memorias USB, SSD</li>
+</ul>
+<h1 id="componentes-externos">Componentes externos</h1>
+<hr />
+<p>Los componentes externos también llamados periféricos son aquellos que se conectan a la caja del ordenador para ampliar sus funcionalidades, por ejemplo un ratón, un teclado o un monitor entre otros. </p>
+<h2 id="perifericos-de-entrada">Periféricos de entrada</h2>
+<p>Los periféricos de entrada son aquellos componentes externos que permiten introducir información en el ordenador, por lo tanto los datos entran al ordenador desde el periférico y por eso se llaman de entrada.</p>
+<p>Ejemplos de periféricos de <strong>entrada</strong>:</p>
+<ul>
+<li>Teclado</li>
+<li>Ratón</li>
+<li>Micrófono</li>
+<li>Escáner</li>
+</ul>
+<h2 id="perifericos-de-salida">Periféricos de salida</h2>
+<p>Los periféricos de salida son aquellos componentes externos que permiten sacar información del ordenador, los datos por tanto salen del ordenador para que los podamos ver, escuchar... y por eso se llaman de salida.</p>
+<p>Ejemplos de periféricos de <strong>salida</strong>:</p>
+<ul>
+<li>Monitor</li>
+<li>Impresora</li>
+<li>Altavoces</li>
+<li>Auriculares</li>
+</ul>
+<h2 id="perifericos-de-entrada-y-salida">Periféricos de entrada y salida</h2>
+<p>Los periféricos de entrada y salida son aquellos que realizan las dos operaciones, permiten introducir datos en el ordenador y sacar información del mismo. Por ejemplo una pizarra digital o una impresora multifunción.</p>
+<p><img alt="Impresora multifunción" src="https://cdn.pixabay.com/photo/2014/03/25/16/54/photocopier-297547_960_720.png" /></p>
+<h2 id="otras-clasificaciones">Otras clasificaciones</h2>
+<p>Se pueden establecer diferentes clasificaciones, en función de el sentido del flujo de datos como se ha visto anteriormente (entrada, salida o entrada/salida). Otra clasificación podría ser según la funcionalidad: almacenamiento, comunicación...</p>
+<h2 id="ejemplos">Ejemplos</h2>
+<p>Son periféricos de entrada...</p>
+<ul>
+<li>[x] Ratón</li>
+<li>[ ]  Impresora</li>
+<li>[x] Cámara web</li>
+<li>[x] Joystick</li>
+<li>[x] Lector de código de barras</li>
+<li>[ ] Proyector</li>
+</ul>
+<p>Puedes obtener más información en el tema 3 que encontrarás en <a href="https://portal.edu.gva.es/aules/" title="Plataforma educativa de la Comunitat Valenciana">Aules</a></p>
+<h1 id="conectores-y-puertos">Conectores y puertos</h1>
+<p>Los conectores internos también llamados slots o ranuras permiten ampliar la capacidades del ordenador, por ejemplo añadiendo una tarjeta de vídeo, de audio o de otros tipos para propósitos específicos.</p>
+<h2 id="conectores-internos">Conectores internos</h2>
+<ul>
+<li>PCI</li>
+<li>PCI- Express</li>
+<li>SATA</li>
+<li>IDE</li>
+<li>ATX</li>
+</ul>
+<h2 id="puertos">Puertos</h2>
+<p>Los puertos permiten conectar los componentes externos al ordenador. Existen muchos tipos de puertos, unos específicos como el de <strong><em>VGA</em></strong> para conectar un monitor, y otros más genéricos como el <strong><em>USB</em></strong> que permiten conectar desde un ratón o teclado a un disco duro externo o una cámara web.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Nombre</th>
+<th>Imagen</th>
+<th>Señal</th>
+<th>Periféricos</th>
+<th align="right">Características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>PS/2</strong></td>
+<td><a href="https://es.wikipedia.org/wiki/PS/2"><img alt="conectores PS/2" src="https://upload.wikimedia.org/wikipedia/commons/5/54/PS2_keyboard_and_mouse_jacks.jpg" title="Jud McCranie, CC BY-SA 4.0, via Wikimedia Commons" /></a></td>
+<td>Datos</td>
+<td>Ratón o Teclado</td>
+<td align="right">Obsoleto, ahora se utiliza USB</td>
+</tr>
+<tr>
+<td align="left"><strong>USB</strong></td>
+<td><img alt="Conector USB" src="../img/usb-connector.jpg" /></td>
+<td>Datos</td>
+<td>Ratón, Teclado, Cámara web...</td>
+<td align="right">Existen diferentes estándares y tipos de conectores</td>
+</tr>
+<tr>
+<td align="left"><strong>VGA</strong></td>
+<td><img alt="Conector VGA" src="https://upload.wikimedia.org/wikipedia/commons/9/92/SVGA_port.jpg" title="Duncan Lithgow, Public domain, via Wikimedia Commons" /></td>
+<td>Vídeo</td>
+<td>Monitor</td>
+<td align="right">Asociado a monitores CRT, está siendo sustituido  por otros como <strong><em>DVI</em></strong>, <strong><em>HDMI</em></strong></td>
+</tr>
+<tr>
+<td align="left"><strong>DVI</strong></td>
+<td><img alt="Conector DVI" src="../img/dvi.jpg" /></td>
+<td>Vídeo analógico o digital</td>
+<td>Monitores,</td>
+<td align="right">Tiene varias variantes, está siendo sustituido por <strong><em>HDMI</em></strong></td>
+</tr>
+<tr>
+<td align="left"><strong>HDMI</strong></td>
+<td><img alt="Conector HDMI" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/HDMI_connector-female_PNr%C2%B00057.jpg" title="D-Kuru, CC BY-SA 2.0 AT, via Wikimedia Commons" /></td>
+<td>Audio y vídeo</td>
+<td>Vídeoconsolas, televisores, proyectores, monitores</td>
+<td align="right">Está sustituyendo a conectores de vídeo anteriores como <strong><em>VGA</em></strong> y <strong><em>DVI</em></strong></td>
+</tr>
+<tr>
+<td align="left"><strong>RJ45</strong></td>
+<td><img alt="Conector RJ45 o LAN" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Rj-45_on_netcard.jpg" title="Baran Ivo, Public domain, via Wikimedia Commons" /></td>
+<td>Comunicaciones</td>
+<td>Cable ethernet del Router, switch</td>
+<td align="right">Permite conectar un equipo a una red de comunicaciones</td>
+</tr>
+<tr>
+<td align="left"><strong>Jack (3,5 mm)</strong></td>
+<td><img alt="Conectores audio" src="../img/puerto_audio.jpg" /></td>
+<td>Audio</td>
+<td>Auriculares, micrófono, altavoces...</td>
+<td align="right">Normalmente aparecen varios (de entrada, salida, subwoofers...), cada uno con un color</td>
+</tr>
+<tr>
+<td align="left"><strong>S/PDIF (óptico)</strong></td>
+<td><img alt="Conector S/PDIF óptico" src="../img/spdif.jpg" /></td>
+<td>Audio digital</td>
+<td>Reproductor de CD profesional, unidad de Minidisc</td>
+<td align="right">Existe una versión coaxial y otra <em>óptica</em></td>
+</tr>
+<tr>
+<td align="left"><strong>RS232</strong> (Puerto serie)</td>
+<td><img alt="Conector RS323, serie " src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Serial_port_%289-pin%29.jpg" title="Jud McCranie, CC BY-SA 4.0 , via Wikimedia Commons" /></td>
+<td>Datos</td>
+<td>Ratón, teclado. Equipos industriales</td>
+<td align="right">Obsoleto en los ordenadores[1]</td>
+</tr>
+<tr>
+<td align="left"><strong>DB25</strong> (Puerto paralelo)</td>
+<td><img alt="Conector DB25, paralelo" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Parallel_computer_printer_port.jpg" title="Duncan Lithgow, Public domain, via Wikimedia Commons" /></td>
+<td>Datos</td>
+<td>Impresoras</td>
+<td align="right">Obsoleto[1]</td>
+</tr>
+<tr>
+<td align="left">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td align="right">...</td>
+</tr>
+</tbody>
+</table>
+<p>Puedes completar la tabla con más conectores que conozcas. Investiga en internet o consulta <a href="https://portal.edu.gva.es/aules/" title="Plataforma educativa de la Comunitat Valenciana">Aules</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Atención</p>
+<p>[1] El conector USB ha reemplazado a estos conectores.</p>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
