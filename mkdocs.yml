@@ -1,0 +1,13 @@
+site_name: Equipos informáticos
+docs_dir: md
+site_dir: docs
+nav:
+  - Inicio: index.md
+  - Introducción: introduccion.md
+  - Contenido: 
+    - Hardware: hardware.md
+    - Software: software.md
+theme: mkdocs
+
+markdown_extensions:
+  - admonition
